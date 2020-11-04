@@ -5,7 +5,7 @@ export function getBrowserInfo() {
     var userAgent = navigator.userAgent;
     var matches = userAgent.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
     var temp;
-    console.log(matches)
+
     if (/trident/i.test(matches[1])) {
         temp = /\brv[ :]+(\d+)/g.exec(userAgent) || [];
         return {
@@ -28,4 +28,13 @@ export function getBrowserInfo() {
         name: matches[0],
         version: parseInt(matches[1])
     }
+}
+
+export function getNavigator() {
+    const x = {
+        userAgent: navigator.userAgent,
+        appVersion: navigator.appVersion,
+        appName: navigator.appName,
+    }
+    return x;
 }
