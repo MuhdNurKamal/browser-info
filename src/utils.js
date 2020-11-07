@@ -17,7 +17,7 @@ export function getBrowserInfo() {
         temp = userAgent.match(/\b(OPR|Edge)\/(\d+)/);
         if (temp != null) {
             return {
-                name: 'Opera',
+                name: temp[0],
                 version: parseInt(temp[1])
             }
         }
