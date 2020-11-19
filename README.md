@@ -1,6 +1,6 @@
-# test-browser
+# Browser Info
 
-Built to test browser version
+Shows your current browser version and determine browser versions from browser navigator info.
 
 Served at https://browser-info.herokuapp.com/
 

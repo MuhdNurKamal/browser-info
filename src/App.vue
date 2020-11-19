@@ -10,7 +10,7 @@
           transition="scale-transition"
           width="40"
         />
-        <h1>Browser Test</h1>
+        <h1>Browser Info</h1>
       </div>
 
       <v-spacer></v-spacer>
